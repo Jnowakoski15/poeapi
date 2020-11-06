@@ -15,10 +15,6 @@ type Category struct {
 	Weapons     []string `json:"weapons"`
 }
 
-type Value struct {
-	Val []string
-}
-
 // Property values supporting POE Items
 type Property struct {
 	Name        string      `json:"name"`
@@ -36,7 +32,7 @@ type Item struct {
 	Category              []Category `json:"category"`
 	Corrupted             bool       `json:"corrupted"`
 	CosmeticMods          []string   `json:"cosmeticMods"`
-	CraftedMods           []string   `json:craftedMods"`
+	CraftedMods           []string   `json:"craftedMods"`
 	DescrText             string     `json:"descrText"`
 	Duplicated            bool       `json:"duplicated"`
 	Elder                 bool       `json:"elder"`
